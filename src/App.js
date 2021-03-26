@@ -1,15 +1,12 @@
 import React from 'react';
+import Feedback from './components/Feedback/Feedback';
 
+const App = () => (
+    <>
+        <h1>Caffe Expresso</h1>
 
-
-
-const App = () => {
-    return (
-        <div>
-            
-           
-        </div>
-    );
-};
+        <Feedback />
+    </>
+);
     
 export default App;
