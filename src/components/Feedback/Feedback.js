@@ -43,7 +43,7 @@ class Feedback extends React.Component {
         const keyName = Object.keys(this.state);
 
         return (
-            <div>
+            <div className="conteiner">
                 <Section title="Please leave feedback">
                     <FeedbackOptions
                         options={keyName}
@@ -52,7 +52,8 @@ class Feedback extends React.Component {
                 </Section>
 
                 <Section title="Statistics">
-                    {this.countTotalFeedback() === 0 ? (<Notification message="No feedback given" />
+                    {this.countTotalFeedback() === 0 ? (
+                        <Notification message="No feedback given" />
                     ) : (<Statistics
                         good={this.state.good}
                         neutral={this.state.neutral}
