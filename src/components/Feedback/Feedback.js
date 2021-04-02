@@ -3,6 +3,7 @@ import Section from './Section';
 import FeedbackOptions from './FeedbackOptions';
 import Statistics from './Statistics';
 import Notification from './Notification';
+import PropTypes from 'prop-types';
 import './Feedback.css';
 
 class Feedback extends React.Component {
@@ -16,6 +17,12 @@ class Feedback extends React.Component {
         good: 0,
         neutral: 0,
         bad: 0
+    };
+
+    static propTypes = {
+        good: PropTypes.number,
+        neutral: PropTypes.number,
+        bad: PropTypes.number,
     };
 
     handleClick = evt => {

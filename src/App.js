@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Feedback from './components/Feedback/Feedback';
 
-const App = () => (
-    <>
-        <Feedback />
-    </>
-);
+class App extends Component {
+
+    render() {
+        return (
+            <Feedback />
+        )
+    }
+}
 
 export default App;
